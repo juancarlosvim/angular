@@ -112,6 +112,15 @@
         <td>capitalizado</td>
         <td>{{nombreCompleto | capitalizado:false}}</td>
       </tr>
+      <tr>
+        <td>{{nombre}}</td>
+        <td> contraseña:{{activar}}
+          <br>
+          <button type="button" (click)="activar = !activar" class="btn btn-outline-primary"> Activar / descarivar</button>
+        </td>
+
+        <td>{{nombre | contrasena:activar}}</td>
+      </tr>
     </tbody>
   </table>
 
